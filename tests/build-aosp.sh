@@ -22,7 +22,7 @@ if [ "$1" = "docker" ]; then
     prebuilts/misc/linux-x86/ccache/ccache -M 100G
 
     source build/envsetup.sh
-    lunch aosp_hammerhead-userdebug
+    lunch aosp_arm-eng
     make -j $cpus
 else
     aosp_url="https://raw.githubusercontent.com/kylemanna/docker-aosp/master/utils/aosp"
