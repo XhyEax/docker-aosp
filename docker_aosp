@@ -9,7 +9,7 @@ set -e
 
 # Override from environment
 
-AOSP_IMAGE=${AOSP_IMAGE:-weishu/build-aosp}
+AOSP_IMAGE=${AOSP_IMAGE:-kylemanna/aosp}
 echo 'AOSP IMAGE' ${AOSP_IMAGE}
 AOSP_ARGS=${AOSP_ARGS:---rm -it}
 
