@@ -19,7 +19,7 @@ if [ "$1" = "docker" ]; then
 
     source build/envsetup.sh
     lunch aosp_hammerhead-userdebug
-    make -j $cpus
+    make -j $[2*$cpus]
 else
     aosp_url="https://raw.githubusercontent.com/kylemanna/docker-aosp/master/utils/aosp"
     args="bash run.sh docker"
