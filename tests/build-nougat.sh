@@ -23,7 +23,7 @@ if [ "$1" = "docker" ]; then
 
     source build/envsetup.sh
     lunch aosp_arm-eng
-    make -j $cpus
+    make -j [$cpus*2]
 else
     aosp_url="https://raw.githubusercontent.com/kylemanna/docker-aosp/master/utils/aosp"
     args="bash run.sh docker"
