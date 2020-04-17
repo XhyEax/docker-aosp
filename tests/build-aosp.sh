@@ -18,7 +18,8 @@ if [ "$1" = "docker" ]; then
 
     # Use default sync '-j' value embedded in manifest file to be polite
     repo sync
-
+    
+    export USER=$(whoami)
     prebuilts/misc/linux-x86/ccache/ccache -M 100G
 
     source build/envsetup.sh
