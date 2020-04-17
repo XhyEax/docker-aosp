@@ -39,8 +39,8 @@ else
     #
     if [ -n "$AOSP_BIN" ]; then
         $AOSP_BIN $args
-    elif [ -x "../utils/aosp" ]; then
-        ../utils/aosp $args
+    elif [ -x "../aosp" ]; then
+        ../aosp $args
     elif [ -n "$(type -P aosp)" ]; then
         aosp $args
     else

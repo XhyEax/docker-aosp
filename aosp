@@ -2,7 +2,7 @@
 #
 # Simple AOSP wrapper to run commands in an AOSP docker container
 #
-# Author: Kyle Manna <kyle@kylemanna.com> weishu twsxtd@gmail.com XhyEax xhyeax@gmail.com
+# Author: Kyle Manna <kyle@kylemanna.com> weishu twsxtd@gmail.com XhyEax <xhyeax@gmail.com>
 #
 
 set -e
